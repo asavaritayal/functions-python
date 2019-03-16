@@ -11,6 +11,5 @@ LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
 
 
-COPY "entrypoint.sh" "/entrypoint.sh"
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["help"]
